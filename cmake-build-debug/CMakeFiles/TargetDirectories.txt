@@ -1,0 +1,3 @@
+/Users/nikitadvornitsyn/CLionProjects/bcs323_mini_project/cmake-build-debug/CMakeFiles/bcs323_mini_project.dir
+/Users/nikitadvornitsyn/CLionProjects/bcs323_mini_project/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/nikitadvornitsyn/CLionProjects/bcs323_mini_project/cmake-build-debug/CMakeFiles/rebuild_cache.dir
