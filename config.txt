@@ -1,0 +1,4 @@
+num_workers=4
+directories=./data
+file_types=.txt
+memory_threshold=80  # percent

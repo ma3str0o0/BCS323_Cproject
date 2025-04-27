@@ -1,0 +1,25 @@
+#!/bin/bash
+
+#!/bin/bash
+
+# Configuration
+CONFIG_FILE="config.txt"
+WORKER_EXEC=./worker
+MASTER_EXEC=./master
+NUM_WORKERS=$(grep "num_workers" "$CONFIG_FILE" | cut -d'=' -f2)
+
+echo "[Launch] Launching $NUM_WORKERS workers..."
+
+# Launch workers
+for i in $(seq 1 $NUM_WORKERS); do
+    $WORKER_EXEC $i &
+    echo "[Launch] Worker $i started with PID $!"
+done
+
+sleep 2  # Let workers get ready
+
+echo "[Launch] Launching master..."
+$MASTER_EXEC &
+echo "[Launch] Master started with PID $!"
+
+echo "[Launch] System is up and running."
